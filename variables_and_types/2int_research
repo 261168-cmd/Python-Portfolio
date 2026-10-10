@@ -1,0 +1,17 @@
+# File Name: int_research.py
+# Importance: Official python.org research for int() string handling behaviors.
+# Reference: https://python.org
+
+# Expected Output:
+# int(" 22 ")  -> Works (Because Python deletes spaces automatically)
+# int("+22")   -> Works (Because the plus sign is allowed)
+# int("0022")  -> Works (Because zeros on the left are ignored)
+# int("2_2")   -> Works (Because the underscore inside numbers is allowed)
+
+# Print the results to the screen
+print("----------------------------------------")
+print("Result 1: ", int(" 22 "))
+print("Result 2: ", int("+22"))
+print("Result 3: ", int("0022"))
+print("Result 4: ", int("2_2"))
+print("----------------------------------------")
