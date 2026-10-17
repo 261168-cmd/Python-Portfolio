@@ -1,0 +1,27 @@
+# login_report.py
+# This program calculates and prints a formatted login security report.
+
+# Define the maximum login attempts allowed by the system
+MAX_LOGIN_ATTEMPTS = 5
+
+# Get the authentication data from the user
+username = input("Username: ")
+failed_attempts = int(input("Failed attempts: "))
+
+# Calculate how many login attempts are remaining
+attempts_left = MAX_LOGIN_ATTEMPTS - failed_attempts
+
+# Build and display the aligned report layout
+banner = "=" * 30
+
+print(banner)
+print("LOGIN REPORT")
+print(banner)
+print(f"User:\t\t{username}")
+print(f"Failed:\t\t{failed_attempts}")
+print(f"Attempts left:\t{attempts_left}")
+
+# ----------------------------------------------------
+# EXAMPLE RUN RESULT:
+# Constant attempts = 5, Failed = 2, Attempts left = 3
+# ----------------------------------------------------

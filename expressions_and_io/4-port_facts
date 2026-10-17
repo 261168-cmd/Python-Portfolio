@@ -1,0 +1,22 @@
+# port_facts.py
+# This program counts the numbers for TCP ports and IPv4 addresses.
+# Source: RFC 9293 (TCP ports) and RFC 791 (IPv4 addresses).
+
+# 1. Number of bits for ports and IPv4
+PORT_BITS = 16
+IPV4_BITS = 32
+
+# 2. Math calculations using power operator (**)
+total_possible_ports = 2 ** PORT_BITS
+highest_port_number = total_possible_ports - 1
+total_ipv4_addresses = 2 ** IPV4_BITS
+
+# 3. Print the results using f-strings with underscores
+print(f"Total possible port numbers: {total_possible_ports:_}")
+print(f"Highest assignable port number: {highest_port_number:_}")
+print(f"Total possible IPv4 addresses: {total_ipv4_addresses:_}")
+
+# ----------------------------------------------------
+# EXPECTED OUTPUT RESULT:
+# Ports = 65,536 | Highest Port = 65,535 | IPv4 Space = 4,294,967,296
+# ----------------------------------------------------

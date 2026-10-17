@@ -1,0 +1,27 @@
+# fix_the_session.py
+# This program reports a user's session time correctly.
+
+username = input("Username: ")
+
+# 1. ERROR TYPE: Runtime Error
+# WHY: input() returns text (str). We must convert it to int to do math.
+total_seconds = int(input("Session length in seconds: "))
+
+# 2. ERROR TYPE: Semantic Error (Logical Error)
+# WHY: Single slash '/' gives a float (15.0). We use '//' to get a whole number (15).
+minutes = total_seconds // 60
+
+seconds = total_seconds % 60
+
+print("=" * 30)
+
+# 3. ERROR TYPE: Semantic Error (Logical Error)
+# WHY: Missing the letter 'f' before quotes prints the text "{username}" instead of the real name.
+print(f"User: {username}")
+
+# 4. ERROR TYPE: Runtime Error
+# WHY: Python cannot mix text (str) and numbers (int) using '+'. 
+# Using a clean f-string fixes this perfectly.
+print(f"Session: {minutes} min {seconds} s")
+
+print("=" * 30)

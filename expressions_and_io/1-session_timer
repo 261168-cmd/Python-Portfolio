@@ -1,0 +1,19 @@
+# session_timer.py
+# This program converts a user-inputted session length in seconds into minutes and seconds.
+
+# 1. Ask for session length and convert it to an integer
+total_seconds = int(input("Session length in seconds: "))
+
+# 2. Calculate whole minutes and remaining seconds
+minutes = total_seconds // 60
+seconds = total_seconds % 60
+
+# 3. Print the final result using an f-string
+print(f"Session length: {minutes} minutes and {seconds} seconds")
+
+# ----------------------------------------------------
+# TEST RUN OUTPUTS:
+# Test 1 (Input 905): Session length: 15 minutes and 5 seconds
+# Test 2 (Input 60):  Session length: 1 minutes and 0 seconds
+# Test 3 (Input 59):  Session length: 0 minutes and 59 seconds
+# ----------------------------------------------------
