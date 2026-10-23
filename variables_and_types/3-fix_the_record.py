@@ -25,13 +25,13 @@ port = int("20")
 # Reason: Misspelled name, variable not defined.
 # System Error: NameError: name 'device_nam' is not defined
 # Fix: Change to device_name.
-print("----------------------------------------")
+print("-" * 30)
 print("Device Record Data:")
 print("Device Name:", device_name)
 print("Backup IP:  ", backup_ip)
 print("Device Type:", device_type)
 print("Port Number:", port)
-print("----------------------------------------")
+print("-" * 30)
 
 # Note:
 # Python checks SyntaxError first before running the code.

@@ -9,15 +9,16 @@ device_name = "web-server-ppu"
 device_ip = "192.0.2.20"
 service = "HTTPS"
 open_port = 443
+Line = "=" * 35
 
 # Print initial data with border layout
-print("========================================")
+print(Line)
 print("Device Name:    ", device_name)
 print("IP Address:     ", device_ip)
 print("Current Service:", service)
 print("Port Number:    ", open_port)
 print("Max Connections:", MAX_CONNECTIONS)
-print("========================================")
+print(Line)
 
 print()  # Blank line
 
@@ -26,6 +27,6 @@ service = "SSH"
 open_port = 22
 
 # Print updated values together with border layout
-print("========================================")
+print(Line)
 print("New configuration:", service, "on port", open_port)
-print("========================================")
+print(Line)

@@ -8,20 +8,22 @@
 # "198.51.100.7" -> str   (IP address text configuration)
 # 1_000          -> int   (Large number with underscore)
 
+Line = "=" * 35
+
 # Verify original data types
-print("----------------------------------------")
+print(Line)
 print(type(8080))
 print(type("8080"))
 print(type(99.5))
 print(type("198.51.100.7"))
 print(type(1_000))
-print("----------------------------------------")
+print(Line)
 
 print()  # Blank line
 
 # Print updated values after conversion operations
-print("----------------------------------------")
+print(Line)
 print(int("443"), type(int("443")))
 print(str(8080), type(str(8080)))
 print(float("2.5"), type(float("2.5")))
-print("----------------------------------------")
+print(Line)

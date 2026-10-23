@@ -7,11 +7,11 @@
 # int("+22")   -> Works (Because the plus sign is allowed)
 # int("0022")  -> Works (Because zeros on the left are ignored)
 # int("2_2")   -> Works (Because the underscore inside numbers is allowed)
-
+Line = "-" * 30
 # Print the results to the screen
-print("----------------------------------------")
+print(Line)
 print("Result 1: ", int(" 22 "))
 print("Result 2: ", int("+22"))
 print("Result 3: ", int("0022"))
 print("Result 4: ", int("2_2"))
-print("----------------------------------------")
+print(Line)
