@@ -20,3 +20,10 @@ print(f"Total possible IPv4 addresses: {total_ipv4_addresses:_}")
 # EXPECTED OUTPUT RESULT:
 # Ports = 65,536 | Highest Port = 65,535 | IPv4 Space = 4,294,967,296
 # ----------------------------------------------------
+port = input("Port: ")  # user types 22
+
+print(port == 22)
+
+port = int(port)
+
+print(port == 22)("Port: ") 
