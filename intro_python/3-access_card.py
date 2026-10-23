@@ -1,7 +1,7 @@
 # Name: Bassam Basel Arafeh
 # Date: 2026-10-03
 # Description: Prints a security access card with student details.
-LINE = "*" * 40
+LINE = "*" * 50
 
 print(LINE)
 print("          STUDENT ACCESS CARD           ")
